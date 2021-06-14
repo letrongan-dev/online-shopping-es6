@@ -34,4 +34,21 @@ export class Product {
       </div>
     </div>`;
   }
+  renderProdListTable() {
+    return `<tr>
+    <td scope="row">${this.id}</td>
+    <td><img src= ${this.image} height="50"/></td>
+    <td>${this.name}</td>
+    <td>${this.price}</td>
+    <td>${this.screen}</td>
+    <td>${this.frontCamera}</td>
+    <td>${this.backCamera}</td>
+    <td>${this.desc}</td>
+    <td>${this.type}</td>
+    <td>${this.inventory}</td>
+    <td>${this.rating}</td>
+    <td><button class="btn btn-sm btn-danger">Xóa</button></td>
+    </tr>
+    `;
+  }
 }
